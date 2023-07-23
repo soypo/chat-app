@@ -15,7 +15,8 @@ class MessagesController < ApplicationController
       @messages = @room.messages.includes(:user)
 
       render :index
-    end  end
+    end
+  end
 
   private
 
